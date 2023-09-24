@@ -129,6 +129,7 @@ prepare_environment()
 clear_comfy_args()
 # cuda_malloc()
 
-download_models()
+if not os.path.isfile("/content/gdrive/MyDrive/Fooocus/models/checkpoints/sd_xl_base_1.0_0.9vae.safetensors"):
+    download_models()
 
 from webui import *
